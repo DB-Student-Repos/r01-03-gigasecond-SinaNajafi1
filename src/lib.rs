@@ -1,6 +1,7 @@
 use time::PrimitiveDateTime as DateTime;
+use std::time::Duration;
 
-// Returns a DateTime one billion seconds after start.
 pub fn after(start: DateTime) -> DateTime {
-    unimplemented!("What time is a gigasecond later than {start}");
+    let _dur = start + Duration::from_secs(1000000000);
+    _dur
 }
